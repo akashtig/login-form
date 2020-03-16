@@ -97,7 +97,7 @@
 
 
 
-  @media screen and (orientation:portrait){
+  @media screen and (orientation:portrait), (max-width: 650px){
     .wrapper ul li{
         display: none;
     }
