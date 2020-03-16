@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%= action %></title>
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/<%= css %>.css">
+</head>
+<body>
+  <main>
+    
+    <section>
+      <nav>
+        <div class="logo"><a href=""><img src="../assets/tyre.png" alt="logo" height="50" width="50">the tyred company</a></div>
+        <div class="wrapper">
+          <ul>
+            <li><a href="#"> Contact Us</a></li>
+            <li><a href="#"> About</a></li>
+            <% let a=action.toLowerCase(); console.log(a); if(a=='login'){a=""} %>
+            <li ><a href="/<%= a %>" class="action"><%= action %></a></li>
+          </ul>
+        </div>
+        <div class="hamburger">
+          <img class="hamburger-logo" src="assets/menu.png" alt="menu">
+       </div>
+       <div class="hamburger-close">
+           <img class="hamburger-close-logo" src="assets/cancel.png" alt="menu">
+           <div class="list"></div>
+        </div>
+      </nav>

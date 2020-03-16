@@ -1,0 +1,24 @@
+<%- include('partials/header')  %>
+      <form action="#" method="POST" enctype="multipart/form-data">
+        <fieldset>
+          <article>
+            <div class="form"></div> 
+            <p><span>* </span>required</p>
+            <div class="form-logo"><img src="assets/key.png" width="50" height="50" alt=""></div>
+            <label for="username" id="l-username">Username<span> *</span></label>
+            <input type="text" name="username" id="username" >
+            <label for="email" id="l-email">E-mail<span> *</span></label>
+            <input type="email" name="email" id="email" placeholder="abc@example.com">
+            <label for="tel" id="l-tel">Phone</label>
+            <input type="tel" name="tel" id="tel">
+            <label for="password" id="l-password">Password<span> *</span></label>
+            <input type="password" name="password" id="password" placeholder="min length - 8 characters">
+            <label for="confirmPassword" id="l-confirmPassword">Confirm Password<span> *</span></label>
+            <input type="password" name="confirmPassword" id="confirmPassword">
+            <label for="profilePic" id="l-profilePic">Profile Picture</label>
+            <input type="file" name="profilePic" id="profilePic">
+            <input type="submit" value="Submit" id="submit">
+            
+          </article>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,20 @@
+<%- include('partials/header') %>
+
+      <form action="#" method="POST">
+        <fieldset>
+          <article>
+            <div class="form"></div> 
+            <!-- legend has to the first child of fieldset to validate the code, but we can't apply grid on fieldset, so I had to add article -->
+                <legend>Login</legend>
+                <div class="form-logo"><img src="assets/padlock.png" width="40" height="40" alt="padlock"></div>
+                <label for="username" id="l-username">Username</label>
+                <input type="text" name="username" id="username">
+                <label for="password" id="l-password">Password</label>
+                <input type="password" name="password" id="password">
+                <input type="submit" value="Login" id="submit">
+            
+          </article>
+          <p class="sign-up">Not a member? <a href="/signup">Register </a></p>
+
+<%- include('partials/footer') %>
+  
